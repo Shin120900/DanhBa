@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layoutdb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_200"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/ic_baseline_arrow_back_24">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/tvInfoTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/edit_info_title"
+                android:textSize="25dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_margin="15dp"
+            android:layout_below="@+id/layoutdb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:inputType="text"
+                android:textSize="40dp"
+                android:id="@+id/tvName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3">
+
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@id/layout1"
+            android:id="@id/layout2"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:drawableTop="@drawable/ic_baseline_call_24"
+                android:text="@string/info_call"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <TextView
+                android:drawableTop="@drawable/ic_baseline_email_24"
+                android:text="@string/info_inbox"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="0dp"
+                android:drawableTop="@drawable/ic_baseline_video_call_24"
+                android:text="@string/info_facetime"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="15dp"
+            android:layout_below="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_baseline_phone_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_margin="5dp"
+                android:inputType="number"
+                android:id="@+id/tvPhone"
+                android:textSize="15dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+
+            <Button
+                android:id="@+id/btnEditInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:text="@string/info_title"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

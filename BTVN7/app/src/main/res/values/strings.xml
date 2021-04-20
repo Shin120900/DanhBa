@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">BTVN7</string>
+    <string name="phonebook_title"><b>Danh Bạ</b></string>
+    <string name="info_title">Chỉnh sửa thông tin liên lạc</string>
+    <string name="edit_info_title"><b>Thông tin liên lạc</b></string>
+    <string name="info_name" >Họ Tên        :</string>
+    <string name="info_phone">Số Điện Thoại :</string>
+    <string name="info_call">Gọi</string>
+    <string name="info_inbox">Nhắn tin</string>
+    <string name="info_facetime">Facetime</string>
+    <string name="editinfo_save">Lưu thay đổi</string>
+    <string name="editinfo_delete">Xóa</string>
+
+</resources>
